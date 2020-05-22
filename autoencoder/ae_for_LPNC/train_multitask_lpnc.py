@@ -50,8 +50,7 @@ train_batch_size = 64
 val_batch_size = 256
 
 print('\nFitting autoencoder model...\n')
-train_data = generate_data(adj, train, feats,
-                           y_train, mask_train, shuffle=True)
+train_data = generate_data(adj, train, feats, y_train, mask_train, shuffle=True)
 batch_data = batch_data(train_data, train_batch_size)
 num_iters_per_train_epoch = adj.shape[0] / train_batch_size
 y_true = y_val

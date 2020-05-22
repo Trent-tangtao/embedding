@@ -70,4 +70,4 @@ for index in k:
     print('Precision@{:d}: {:6f}'.format(index, precisionK[index-1]))
 print('\nAll Done.')        
 
-# 全是11111111
+# 结果全是11111111

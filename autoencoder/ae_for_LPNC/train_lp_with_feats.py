@@ -9,7 +9,7 @@ from utils_gcn import load_citation_data, split_citation_data
 from ae_LPNC import autoencoder_with_node_features
 
 
-# 以'citeseer'数据集为例，讨论节点分类过程
+# 以'citeseer'数据集为例，讨论带节点特征的链接预测
 dataset = 'citeseer'
 print('\nLoading dataset {:s}...\n'.format(dataset))
 adj, feats,_,_,_,_,_,_ = load_citation_data(dataset)
@@ -22,8 +22,6 @@ train.setdiag(0.0)
 
 test_r = test_inds[:, 0]
 test_c = test_inds[:, 1]
-# Collect edge labels for evaluation
-# NOTE: matrix is undirected and symmetric
 labels = []
 labels.extend(np.squeeze(adj[test_r, test_c].toarray()))
 labels.extend(np.squeeze(adj[test_c, test_r].toarray()))
@@ -62,8 +60,7 @@ for e in range(epochs):
         # Each iteration/loop is a batch of train_batch_size samples
         if dataset in ['conflict', 'metabolic']:
             batch_adj = StandardScaler().fit_transform(batch_adj)
-            res = ae.train_on_batch([batch_adj],
-                                    [batch_train, batch_f])
+            res = ae.train_on_batch([batch_adj],[batch_train, batch_f])
         else:
             res = ae.train_on_batch([batch_adj], [batch_train])
         train_loss.append(res)

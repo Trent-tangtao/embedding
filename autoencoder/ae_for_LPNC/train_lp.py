@@ -85,5 +85,5 @@ for e in range(epochs):
 print('\nAll Done.')
 
 # Evaluating val set...
-# Val AUC: 0.911198
-# Val AP: 0.609487
+# Val AUC: 0.907863
+# Val AP: 0.617453

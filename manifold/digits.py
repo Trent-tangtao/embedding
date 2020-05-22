@@ -23,7 +23,7 @@ for i in range(n_img_per_row):
         img[ix:ix + 8, iy:iy + 8] = X[i * n_img_per_row + j].reshape((8, 8))
 plt.imshow(img, cmap=plt.cm.binary)
 plt.title('A selection from the 64-dimensional digits dataset')
-# plt.show()
+plt.show()
 
 
 # ----------------------------------------------------------------------
@@ -75,4 +75,4 @@ clf = manifold.LocallyLinearEmbedding(n_neighbors=n_neighbors, n_components=2, m
 t0 = time()
 X_lle = clf.fit_transform(X)
 print("Done. Reconstruction error: %g" % clf.reconstruction_error_)
-# plot_embedding(X_lle,"Locally Linear Embedding of the digits (time %.2fs)" %(time() - t0))
+plot_embedding(X_lle,"Locally Linear Embedding of the digits (time %.2fs)" %(time() - t0))
