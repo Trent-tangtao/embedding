@@ -1,0 +1,129 @@
+/Users/tang/anaconda3/bin/python3.6 /Users/tang/Desktop/embedding/autoencoder.py
+WARNING:tensorflow:From /Users/tang/Desktop/embedding/autoencoder.py:9: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+Extracting /Users/tang/Desktop/embedding/data/train-images-idx3-ubyte.gz
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Extracting /Users/tang/Desktop/embedding/data/train-labels-idx1-ubyte.gz
+Instructions for updating:
+Extracting /Users/tang/Desktop/embedding/data/t10k-images-idx3-ubyte.gz
+Please use tf.data to implement this functionality.
+Extracting /Users/tang/Desktop/embedding/data/t10k-labels-idx1-ubyte.gz
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2020-05-21 22:45:48.383237: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Epoch: 0001 cost= 0.066227823
+Epoch: 0002 cost= 0.058085822
+Epoch: 0003 cost= 0.057414502
+Epoch: 0004 cost= 0.055737283
+Epoch: 0005 cost= 0.051476654
+Epoch: 0006 cost= 0.050721232
+Epoch: 0007 cost= 0.050306085
+Epoch: 0008 cost= 0.048705313
+Epoch: 0009 cost= 0.047203451
+Epoch: 0010 cost= 0.046323381
+Epoch: 0011 cost= 0.046763550
+Epoch: 0012 cost= 0.043151271
+Epoch: 0013 cost= 0.043645926
+Epoch: 0014 cost= 0.044506427
+Epoch: 0015 cost= 0.045827448
+Epoch: 0016 cost= 0.040209956
+Epoch: 0017 cost= 0.039774526
+Epoch: 0018 cost= 0.039742019
+Epoch: 0019 cost= 0.040797204
+Epoch: 0020 cost= 0.040689204
+Epoch: 0021 cost= 0.040962629
+Epoch: 0022 cost= 0.038427513
+Epoch: 0023 cost= 0.040943269
+Epoch: 0024 cost= 0.041546319
+Epoch: 0025 cost= 0.038871501
+Epoch: 0026 cost= 0.040766332
+Epoch: 0027 cost= 0.038438987
+Epoch: 0028 cost= 0.039903119
+Epoch: 0029 cost= 0.039819110
+Epoch: 0030 cost= 0.038860485
+Epoch: 0031 cost= 0.036950715
+Epoch: 0032 cost= 0.039235666
+Epoch: 0033 cost= 0.039489523
+Epoch: 0034 cost= 0.036024895
+Epoch: 0035 cost= 0.038091626
+Epoch: 0036 cost= 0.037439566
+Epoch: 0037 cost= 0.038104724
+Epoch: 0038 cost= 0.036997512
+Epoch: 0039 cost= 0.039627057
+Epoch: 0040 cost= 0.036401384
+Epoch: 0041 cost= 0.036968481
+Epoch: 0042 cost= 0.038040273
+Epoch: 0043 cost= 0.037887223
+Epoch: 0044 cost= 0.038333565
+Epoch: 0045 cost= 0.039372891
+Epoch: 0046 cost= 0.037468892
+Epoch: 0047 cost= 0.035769813
+Epoch: 0048 cost= 0.037937336
+Epoch: 0049 cost= 0.037568625
+Epoch: 0050 cost= 0.036623262
+Epoch: 0051 cost= 0.038923301
+Epoch: 0052 cost= 0.037111603
+Epoch: 0053 cost= 0.036915321
+Epoch: 0054 cost= 0.039452076
+Epoch: 0055 cost= 0.034775194
+Epoch: 0056 cost= 0.035881523
+Epoch: 0057 cost= 0.038408447
+Epoch: 0058 cost= 0.038970586
+Epoch: 0059 cost= 0.038667820
+Epoch: 0060 cost= 0.037117667
+Epoch: 0061 cost= 0.036166750
+Epoch: 0062 cost= 0.037154447
+Epoch: 0063 cost= 0.037265059
+Epoch: 0064 cost= 0.036852390
+Epoch: 0065 cost= 0.037090089
+Epoch: 0066 cost= 0.035381261
+Epoch: 0067 cost= 0.035615012
+Epoch: 0068 cost= 0.038332574
+Epoch: 0069 cost= 0.036420684
+Epoch: 0070 cost= 0.035672184
+Epoch: 0071 cost= 0.038320344
+Epoch: 0072 cost= 0.038226750
+Epoch: 0073 cost= 0.038839225
+Epoch: 0074 cost= 0.036274813
+Epoch: 0075 cost= 0.035198048
+Epoch: 0076 cost= 0.037802767
+Epoch: 0077 cost= 0.035589088
+Epoch: 0078 cost= 0.035127789
+Epoch: 0079 cost= 0.037579093
+Epoch: 0080 cost= 0.036948763
+Epoch: 0081 cost= 0.036768913
+Epoch: 0082 cost= 0.035654832
+Epoch: 0083 cost= 0.034513891
+Epoch: 0084 cost= 0.035402682
+Epoch: 0085 cost= 0.035645615
+Epoch: 0086 cost= 0.037077520
+Epoch: 0087 cost= 0.038783737
+Epoch: 0088 cost= 0.036234058
+Epoch: 0089 cost= 0.037340634
+Epoch: 0090 cost= 0.036410898
+Epoch: 0091 cost= 0.036902476
+Epoch: 0092 cost= 0.035259381
+Epoch: 0093 cost= 0.036245465
+Epoch: 0094 cost= 0.037981126
+Epoch: 0095 cost= 0.038338743
+Epoch: 0096 cost= 0.036403894
+Epoch: 0097 cost= 0.037288219
+Epoch: 0098 cost= 0.035761468
+Epoch: 0099 cost= 0.036053035
+Epoch: 0100 cost= 0.036892634
+Optimization Finished!
+2020-05-21 22:49:33.437 python3.6[21547:844787] Unable to setup extension context - error: Couldn’t communicate with a helper application.
+2020-05-21 22:49:41.214 python3.6[21547:845068] Unable to setup extension context - error: Couldn’t communicate with a helper application.
+
+Process finished with exit code 0

@@ -1,0 +1,481 @@
+/Users/tang/anaconda3/bin/python3.6 /Users/tang/Desktop/embedding/graph/train_lp_with_feats.py
+Using TensorFlow backend.
+
+Loading dataset citeseer...
+
+
+Preparing test split...
+
+/Users/tang/Desktop/embedding/graph/train_lp_with_feats.py:19: FutureWarning: arrays to stack must be passed as a "sequence" type such as list or tuple. Support for non-sequence iterables such as generators is deprecated as of NumPy 1.16 and will raise an error in the future.
+  test_inds = np.vstack({tuple(row) for row in test_inds})
+
+Compiling autoencoder model...
+
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py:423: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+
+Fitting autoencoder model...
+
+
+Epoch 1/50
+2020-05-21 20:24:10.302428: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Learning rate: 0.001000
+Shuffling data
+WARNING:tensorflow:From /Users/tang/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Shuffling data
+Avg. training loss: 0.14038277
+
+Evaluating val set...
+Val AUC: 0.575940
+Val AP: 0.615426
+
+Epoch 2/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.025846604
+
+Evaluating val set...
+Val AUC: 0.583386
+Val AP: 0.652726
+
+Epoch 3/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.02460316
+
+Evaluating val set...
+Val AUC: 0.586378
+Val AP: 0.657882
+
+Epoch 4/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.025227226
+
+Evaluating val set...
+Val AUC: 0.594653
+Val AP: 0.671447
+
+Epoch 5/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.024470223
+
+Evaluating val set...
+Val AUC: 0.608716
+Val AP: 0.690065
+
+Epoch 6/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.024476247
+
+Evaluating val set...
+Val AUC: 0.623989
+Val AP: 0.707829
+
+Epoch 7/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.024139823
+
+Evaluating val set...
+Val AUC: 0.650701
+Val AP: 0.738785
+
+Epoch 8/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.023862017
+
+Evaluating val set...
+Val AUC: 0.677674
+Val AP: 0.765902
+
+Epoch 9/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.023394823
+
+Evaluating val set...
+Val AUC: 0.701834
+Val AP: 0.789868
+
+Epoch 10/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.022841267
+
+Evaluating val set...
+Val AUC: 0.724806
+Val AP: 0.811111
+
+Epoch 11/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.02241443
+
+Evaluating val set...
+Val AUC: 0.743215
+Val AP: 0.827221
+
+Epoch 12/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.02182249
+
+Evaluating val set...
+Val AUC: 0.760435
+Val AP: 0.842592
+
+Epoch 13/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.021468533
+
+Evaluating val set...
+Val AUC: 0.769356
+Val AP: 0.848671
+
+Epoch 14/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.020857414
+
+Evaluating val set...
+Val AUC: 0.776613
+Val AP: 0.854995
+
+Epoch 15/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.020598948
+
+Evaluating val set...
+Val AUC: 0.780674
+Val AP: 0.857476
+
+Epoch 16/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.020179074
+
+Evaluating val set...
+Val AUC: 0.785908
+Val AP: 0.862607
+
+Epoch 17/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.019775944
+
+Evaluating val set...
+Val AUC: 0.794670
+Val AP: 0.868418
+
+Epoch 18/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.019312441
+
+Evaluating val set...
+Val AUC: 0.802605
+Val AP: 0.872938
+
+Epoch 19/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.0197651
+
+Evaluating val set...
+Val AUC: 0.817025
+Val AP: 0.879122
+
+Epoch 20/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.01875114
+
+Evaluating val set...
+Val AUC: 0.817037
+Val AP: 0.879285
+
+Epoch 21/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.018451937
+
+Evaluating val set...
+Val AUC: 0.821908
+Val AP: 0.882415
+
+Epoch 22/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.018054582
+
+Evaluating val set...
+Val AUC: 0.824406
+Val AP: 0.884178
+
+Epoch 23/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.017810915
+
+Evaluating val set...
+Val AUC: 0.823785
+Val AP: 0.883787
+
+Epoch 24/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.017560638
+
+Evaluating val set...
+Val AUC: 0.823513
+Val AP: 0.884196
+
+Epoch 25/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.017903645
+
+Evaluating val set...
+Val AUC: 0.830579
+Val AP: 0.886954
+
+Epoch 26/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.01721064
+
+Evaluating val set...
+Val AUC: 0.835478
+Val AP: 0.888740
+
+Epoch 27/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016912969
+
+Evaluating val set...
+Val AUC: 0.837180
+Val AP: 0.890591
+
+Epoch 28/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016717732
+
+Evaluating val set...
+Val AUC: 0.837673
+Val AP: 0.890049
+
+Epoch 29/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.01648188
+
+Evaluating val set...
+Val AUC: 0.834737
+Val AP: 0.889032
+
+Epoch 30/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016302306
+
+Evaluating val set...
+Val AUC: 0.835420
+Val AP: 0.889070
+
+Epoch 31/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016166052
+
+Evaluating val set...
+Val AUC: 0.834984
+Val AP: 0.890120
+
+Epoch 32/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016043968
+
+Evaluating val set...
+Val AUC: 0.833948
+Val AP: 0.889999
+
+Epoch 33/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.016443621
+
+Evaluating val set...
+Val AUC: 0.842644
+Val AP: 0.892187
+
+Epoch 34/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.015726235
+
+Evaluating val set...
+Val AUC: 0.850131
+Val AP: 0.895841
+
+Epoch 35/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.015566628
+
+Evaluating val set...
+Val AUC: 0.849655
+Val AP: 0.895573
+
+Epoch 36/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.015417422
+
+Evaluating val set...
+Val AUC: 0.849299
+Val AP: 0.894181
+
+Epoch 37/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.015213504
+
+Evaluating val set...
+Val AUC: 0.850426
+Val AP: 0.895801
+
+Epoch 38/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.015158752
+
+Evaluating val set...
+Val AUC: 0.851206
+Val AP: 0.896853
+
+Epoch 39/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014978172
+
+Evaluating val set...
+Val AUC: 0.850180
+Val AP: 0.896225
+
+Epoch 40/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014917282
+
+Evaluating val set...
+Val AUC: 0.843828
+Val AP: 0.892950
+
+Epoch 41/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.0154023785
+
+Evaluating val set...
+Val AUC: 0.845170
+Val AP: 0.892891
+
+Epoch 42/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014621554
+
+Evaluating val set...
+Val AUC: 0.847465
+Val AP: 0.893467
+
+Epoch 43/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014563918
+
+Evaluating val set...
+Val AUC: 0.850811
+Val AP: 0.895649
+
+Epoch 44/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.01442889
+
+Evaluating val set...
+Val AUC: 0.853412
+Val AP: 0.897102
+
+Epoch 45/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014299444
+
+Evaluating val set...
+Val AUC: 0.851127
+Val AP: 0.894467
+
+Epoch 46/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014138912
+
+Evaluating val set...
+Val AUC: 0.848235
+Val AP: 0.892656
+
+Epoch 47/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.014045706
+
+Evaluating val set...
+Val AUC: 0.848444
+Val AP: 0.892939
+
+Epoch 48/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.01394151
+
+Evaluating val set...
+Val AUC: 0.847826
+Val AP: 0.891917
+
+Epoch 49/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.013891768
+
+Evaluating val set...
+Val AUC: 0.856606
+Val AP: 0.896009
+
+Epoch 50/50
+Learning rate: 0.001000
+Shuffling data
+Avg. training loss: 0.013704107
+
+Evaluating val set...
+Val AUC: 0.852273
+Val AP: 0.893639
+
+All done.
+
+Process finished with exit code 0
